@@ -2,6 +2,10 @@
 
 _Communicate important updates to your team via git commit messages_.
 
+## Why did we fork this project?
+
+Versions of the package simple-git before 3.16.0 are vulnerable to Remote Code Execution (RCE) via the clone(), pull(), push() and listRemote() methods, due to improper input sanitization. This vulnerability exists due to an incomplete fix of [CVE-2022-25912](https://github.com/advisories/GHSA-9p95-fxvg-qgq2).
+
 ## What is git-notify?
 
 Sometimes you need to communicate changes to other developers on your project. In a small team, a Slack message works okay, but in larger teams and distributed organizations (such as open source projects), reaching everyone can be a pain.
